@@ -1,0 +1,6 @@
+{
+  "name": "VoidMind Supply Chain Intelligence & Recovery Platform",
+  "description": "Enterprise supply-chain intelligence and disruption recovery platform with deterministic risk engine and multi-role workflows.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

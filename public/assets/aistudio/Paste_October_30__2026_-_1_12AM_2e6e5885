@@ -1,0 +1,752 @@
+# DISRUPTIONIQ: COMPLETE MASTER PROMPT
+## Architecture Verification, Premium UI Transformation, Stage 2 Backend Engineering, and Production-Quality Testing
+
+Act as a senior full-stack architect, TypeScript engineer, database specialist, application security engineer, product designer, and motion-design developer.
+
+Your mission is to evolve my existing **DisruptionIQ: Supply Chain Intelligence & Recovery Platform** into a visually distinctive, highly interactive, reliable, and demonstrable application.
+
+This is an existing project. You must inspect and improve it rather than blindly generating a replacement.
+
+---
+
+# PART 1: NON-NEGOTIABLE EXECUTION RULES
+
+## 1. Respect the stage gate
+
+Stage 1 must be reviewed before Stage 2 implementation begins.
+
+The current instruction authorizes you to inspect the repository, verify the architecture, identify inconsistencies, and prepare an implementation plan.
+
+**It does not authorize Stage 2 implementation.**
+
+Do not implement the CSV/JSON ingestion pipeline, carrier webhook engine, or other gated Stage 2 features until I explicitly approve Stage 2 after reviewing your findings.
+
+You may inspect existing code and run safe, non-destructive verification commands.
+
+You must not silently interpret this master prompt as permission to bypass the stage gate.
+
+## 2. Inspect before editing
+
+Before modifying files:
+
+1. Locate the actual active repository.
+2. Inspect the package manifests and installed dependencies.
+3. Inspect the frontend, backend, routes, middleware, and component structure.
+4. Inspect the database connection, ORM, schema, migrations, and seed logic.
+5. Inspect the authentication implementation and role-based permissions.
+6. Inspect the existing automated tests.
+7. Identify completed functionality, incomplete functionality, and mock implementations.
+8. Run safe baseline checks where possible.
+9. Document the actual results.
+
+Do not overwrite working files, remove features, reset databases, or introduce a new architecture simply because it is easier to generate.
+
+If a required file, dependency, database, or credential is unavailable, report the limitation instead of inventing results.
+
+## 3. Reconcile the conflicting architecture reports
+
+Earlier reports describe two different implementations:
+
+- React, TypeScript, Express, Prisma, and 22 database models.
+- React 19, Vite 8, Express 4, Drizzle ORM, PostgreSQL with a pg-mem fallback, and 16 relational tables.
+
+Determine which architecture is present in the actual repository.
+
+Verify this through imports, package manifests, database connection code, schemas, migrations, and tests.
+
+Establish one authoritative architecture based on the actual source code.
+
+If the repository uses Drizzle, preserve Drizzle. If it uses Prisma, preserve Prisma. Do not introduce a second ORM without a demonstrated requirement and explicit approval.
+
+Do not merge the older scaffold into the active repository or create duplicate database layers.
+
+---
+
+# PART 2: PRODUCT IDENTITY AND BRANDING
+
+## 4. Official identity
+
+Application name: **DisruptionIQ**
+
+Product descriptor: **Supply Chain Intelligence & Recovery Platform**
+
+Tagline:
+
+"See the disruption. Trace the impact. Recover with confidence."
+
+The product helps supply-chain teams detect disruptions, understand downstream impact, evaluate recovery options, authorize operational decisions, execute approved actions, and maintain an auditable history.
+
+Apply the product identity consistently across the application:
+
+- Sidebar and navigation.
+- Login and authentication screens.
+- Browser title and favicon.
+- Dashboard and page headings.
+- Notifications and loading states.
+- Relevant metadata and documentation.
+- Product wordmark and logo.
+
+Design a distinctive, professional logo based on connected nodes, supply networks, logistics, or operational intelligence.
+
+Avoid generic AI brain logos, random robot illustrations, excessive futuristic decorations, and generic template branding.
+
+Do not claim real customers, real carrier integrations, or operational outcomes that the application has not demonstrated.
+
+---
+
+# PART 3: AUTHORITATIVE ARCHITECTURE
+
+## 5. Technology policy
+
+Preserve the existing architecture wherever practical.
+
+If the repository confirms that it uses React with TypeScript:
+
+- Use `.tsx` for React components containing JSX.
+- Use `.ts` for backend services, utility modules, validation schemas, shared types, and other TypeScript code.
+- Use `.css` or the existing styling system for styles and animations.
+- Preserve the existing build tooling and package manager.
+- Maintain strict type checking where practical.
+- Avoid introducing `any` unless necessary and documented.
+
+Do not convert TSX files into JSX merely for stylistic reasons.
+
+TSX supports compile-time type checking and is appropriate for a complex application containing shipments, inventory, imports, event processing, permissions, and recovery workflows.
+
+If the actual project uses JavaScript, preserve its established convention instead of performing an unauthorized language migration.
+
+## 6. Database integrity
+
+Preserve the existing relational model and migration conventions.
+
+The application may require relationships between:
+
+- Suppliers.
+- Shipments.
+- Purchase orders and purchase-order lines.
+- Warehouses.
+- Inventory.
+- Customers.
+- Customer orders.
+- Disruptions.
+- Recovery plans.
+- Approvals.
+- Import batches and quarantined rows.
+- Carrier events.
+- Notifications.
+- Audit records.
+
+Reuse existing models wherever possible.
+
+Use appropriate primary keys, foreign keys, unique constraints, indexes, and transactions.
+
+Do not create redundant tables when existing models already represent the same concept.
+
+Never perform destructive migrations or reset persistent data without explicit authorization.
+
+If PostgreSQL and pg-mem are both supported, document their differences and test each relevant implementation appropriately.
+
+---
+
+# PART 4: STAGE 1 VERIFICATION REPORT
+
+## 7. Required findings before any Stage 2 implementation
+
+Produce a report containing:
+
+1. Verified repository location and project structure.
+2. Actual framework and dependency versions.
+3. Actual ORM and database implementation.
+4. Authoritative schema and migration system.
+5. Existing routes and application pages.
+6. Authentication and role-enforcement behavior.
+7. Existing functional features.
+8. Existing placeholders and mock implementations.
+9. Baseline build, type-check, and test results.
+10. Differences between the earlier architecture reports.
+11. Data integrity and security risks.
+12. Recommended Stage 2 implementation sequence.
+13. Dependencies or environmental blockers.
+
+Clearly separate verified facts from assumptions.
+
+Do not claim that an application is working merely because components or source files exist.
+
+After providing the report, **stop and wait for my explicit Stage 2 approval**.
+
+---
+
+# PART 5: PRESERVE THE APPLICATION'S BUSINESS WORKFLOWS
+
+## 8. Core lifecycle
+
+DisruptionIQ should support this operational lifecycle:
+
+Import data → validate events → detect disruption → trace affected orders → calculate deterministic risk → generate feasible recovery options → authorize a recovery plan → execute approved actions → recalculate risk → preserve audit evidence.
+
+Maintain the distinction between implemented features, planned features, simulations, and real external integrations.
+
+## 9. Existing functionality to preserve
+
+Where verified in the current repository, preserve:
+
+- Operational dashboard and KPIs.
+- Inventory trends and low-stock alerts.
+- Supplier and warehouse information.
+- Shipment and order records.
+- Reorder proposal calculations.
+- Existing audit logging.
+- CSV export.
+- Authentication and role-based access.
+- Separation of duties.
+- Existing page routes and navigation.
+
+Do not replace working backend operations with hardcoded frontend examples.
+
+Do not remove working functionality to simplify the redesign.
+
+---
+
+# PART 6: PREMIUM VISUAL DESIGN
+
+## 10. Art direction
+
+Create a polished enterprise interface inspired by the usability of Linear, the product quality of Stripe, the visual discipline of Vercel, and selected award-winning motion-design techniques.
+
+Use these products as inspiration, not as templates to copy.
+
+### Color palette
+
+- Primary canvas: near-black and charcoal.
+- Secondary surfaces: slightly lighter charcoal.
+- Borders: restrained neutral grey.
+- Primary text: warm off-white.
+- Secondary text: muted grey.
+- Accent: orange-red, consistent with the existing `#FF5938` design direction.
+- Status colors: restrained green, amber, and red, with supporting labels and icons.
+
+Preserve the existing design tokens when they already work. Refine them consistently rather than introducing an unrelated color system.
+
+### Visual characteristics
+
+- Clear typography and information hierarchy.
+- Strong alignment and deliberate spacing.
+- Subtle surface gradients.
+- Restrained shadows and ambient lighting.
+- Selective glassmorphism.
+- Consistent border radii.
+- Clean tables and data-dense layouts.
+- Carefully designed empty, loading, success, and error states.
+
+Avoid excessive gradients, glowing borders everywhere, unnecessary cards, and generic AI-generated dashboard aesthetics.
+
+The application must look like serious supply-chain software, not a gaming interface.
+
+---
+
+# PART 7: ADVANCED ANIMATION SYSTEM
+
+## 11. Technology and implementation
+
+Use GSAP and ScrollTrigger for complex entrance sequences, scroll-triggered reveals, and coordinated SVG animations where appropriate.
+
+Inspect existing dependencies before adding libraries.
+
+Use CSS transitions for simple interactions. Avoid installing multiple competing animation libraries without a clear reason.
+
+Create reusable animation utilities and components. Do not independently duplicate animation logic throughout the application.
+
+## 12. Signature bottom-right entrance animation
+
+This is a defining visual requirement.
+
+Page content and selected sections should enter from the bottom-right with subtle movement toward their final positions.
+
+Suggested starting values:
+
+- Horizontal offset: 24–40 px.
+- Vertical offset: 18–32 px.
+- Duration: approximately 450–750 ms.
+- Easing: `power3.out`, `expo.out`, or an equivalent smooth curve.
+- Stagger between related elements: approximately 50–100 ms.
+
+Animate opacity and transforms together.
+
+Use a clear hierarchy:
+
+1. Page heading and introductory content.
+2. Summary metrics.
+3. Filters and controls.
+4. Charts and visualizations.
+5. Detailed tables and secondary panels.
+
+Avoid making the user wait for important information.
+
+Do not apply large entrance movements to every table cell, label, or icon. Apply the effect to meaningful groups and selected elements.
+
+Ensure content remains visible and accessible if JavaScript or animation initialization fails.
+
+## 13. Scroll-triggered animation
+
+Implement meaningful scroll interactions:
+
+- Section reveals with subtle movement and opacity.
+- Staggered analytical cards.
+- Animated SVG connections.
+- Progress indicators.
+- Subtle background parallax.
+- Timeline events appearing in sequence.
+- Selected sticky section headers.
+- Scroll-driven product storytelling where it genuinely improves understanding.
+
+Use ScrollTrigger with appropriate viewport thresholds.
+
+Avoid forced scrolling, unnecessary horizontal sections, excessive pinned content, and repeated animations that make ordinary navigation tedious.
+
+## 14. Hover effects and micro-interactions
+
+### Cards
+
+- Lift slightly on hover, approximately 3–5 px.
+- Brighten borders subtly.
+- Reveal restrained accent lighting.
+- Use smooth transitions without layout shifts.
+
+### Buttons
+
+- Add directional background or gradient transitions where appropriate.
+- Provide clear pressed, focus, disabled, loading, success, and error states.
+- Animate icons subtly when it clarifies the action.
+- Use magnetic pointer interactions only for selected desktop elements.
+
+### Navigation
+
+- Animate the active-route indicator.
+- Highlight the current page clearly.
+- Animate menus and dropdowns.
+- Preserve keyboard navigation and normal route behavior.
+
+### Tables
+
+- Highlight hovered rows.
+- Preserve stable column widths.
+- Make row actions discoverable.
+- Keep essential information visible without hover.
+
+### Graphs
+
+- Highlight selected nodes and connected relationships.
+- Provide useful tooltips and contextual panels.
+- Support clicking and keyboard access where practical.
+
+Avoid aggressive scaling, constant shaking, distracting cursor trails, and excessive glow effects.
+
+## 15. Route transitions
+
+Use subtle transitions between pages if compatible with the existing router.
+
+- Keep transitions short, approximately 150–300 ms.
+- Avoid blocking navigation.
+- Preserve browser history and direct URLs.
+- Prevent stale page content from remaining visible.
+- Do not show an artificial full-screen loading animation for every route.
+
+## 16. Accessibility and motion safety
+
+- Respect `prefers-reduced-motion`.
+- Disable unnecessary spatial movement when reduced motion is enabled.
+- Provide accessible fallbacks.
+- Clean up GSAP timelines, ScrollTriggers, observers, and event listeners.
+- Prefer transform and opacity animations.
+- Avoid continuous expensive rendering.
+- Do not require hovering to reveal critical information.
+- Keep keyboard focus visible.
+- Maintain appropriate contrast and touch-friendly controls.
+
+---
+
+# PART 8: DISTINCTIVE SUPPLY-CHAIN VISUALIZATIONS
+
+## 17. Supply Network Map
+
+Create a meaningful network visualization showing relevant relationships between suppliers, carriers, warehouses, and customer regions.
+
+Requirements:
+
+- Nodes represent real entities or explicitly labelled sample entities.
+- Connections represent meaningful supply-chain relationships.
+- Delayed or disrupted routes have distinguishable states.
+- Warehouse nodes may display relevant capacity or inventory indicators.
+- Selecting a node displays contextual information.
+- Filtering and interaction must work.
+- The visualization must remain usable on smaller screens.
+
+## 18. Disruption Impact Graph
+
+Trace a disruption through its downstream dependencies:
+
+Shipment → purchase order → inbound inventory → inventory shortage → affected customer orders.
+
+Requirements:
+
+- Use actual relationships from the backend wherever available.
+- Clearly distinguish direct impacts from downstream effects.
+- Display relevant quantities, statuses, and deadlines.
+- Allow users to select a node and inspect its details.
+- Provide readable connections and clear status indicators.
+- Avoid inventing causal relationships.
+
+Use React Flow or an appropriate graph library if compatible with the verified architecture.
+
+## 19. Recovery Lifecycle Timeline
+
+Visualize the operational sequence:
+
+Detection → impact analysis → deterministic recovery options → approval → execution → recalculated risk.
+
+Requirements:
+
+- Distinguish pending, completed, rejected, failed, and simulated steps.
+- Display timestamps and relevant actors when available.
+- Make the history traceable to actual application records.
+- Do not display an action as completed before the backend confirms it.
+- Do not invent approval records or execution history.
+
+These three visualizations must explain the real application. They are not merely decorative graphics.
+
+---
+
+# PART 9: RESPONSIVE APPLICATION STRUCTURE
+
+## 20. Dedicated operational pages
+
+Preserve existing routes and improve each page according to its purpose.
+
+The intended page set includes:
+
+- Dashboard / Overview.
+- Analytics.
+- Disruptions.
+- Affected Orders.
+- Shipments.
+- Inventory.
+- Warehouses.
+- Suppliers.
+- Recovery Plans.
+- Approvals.
+- Audit Records.
+- Imports.
+- Notifications, if supported by the existing route structure.
+- Settings.
+
+Do not collapse everything into one dashboard.
+
+Use a consistent application shell, responsive sidebar or navigation, page titles, contextual actions, and breadcrumbs where useful.
+
+Each page should have an appropriate layout rather than repeating the same generic cards.
+
+## 21. Responsive behavior
+
+Support desktop, laptops, tablets, and mobile devices.
+
+Requirements:
+
+- No unintended horizontal overflow.
+- Responsive tables or appropriate mobile alternatives.
+- Readable typography at every breakpoint.
+- Touch-friendly controls.
+- Responsive navigation.
+- Graphs that remain understandable on narrow screens.
+- Accessible focus and interaction states.
+
+Test actual layouts at representative viewport sizes.
+
+---
+
+# PART 10: STAGE 2 BACKEND IMPLEMENTATION
+## Pending explicit approval
+
+After I approve Stage 2, implement the following using the verified existing architecture.
+
+## 22. CSV and JSON ingestion pipeline
+
+Implement real server-side file ingestion.
+
+Requirements:
+
+- Support multipart CSV and JSON uploads.
+- Enforce file-size, file-type, structure, and entity-type restrictions.
+- Parse files safely.
+- Validate every row using explicit schemas and business rules.
+- Return row-level errors with row number, field, error category, and explanation.
+- Persist rejected rows in a quarantine ledger.
+- Track batch identity, initiating user, timestamps, status, accepted row count, rejected row count, and error summaries.
+- Persist valid records with appropriate relational constraints.
+- Define deterministic duplicate handling.
+- Use transactions and bounded batches.
+- Make retries safe.
+- Enforce backend permissions.
+- Create audit records for significant import actions.
+- Connect the existing Imports page to real API behavior.
+
+Define precisely how partially valid files, failed batches, duplicate records, and retries behave.
+
+Do not silently discard malformed records.
+
+Do not claim an import succeeded until persistence has actually succeeded.
+
+## 23. Carrier webhook engine
+
+Implement a genuine backend endpoint for simulated carrier events.
+
+Proposed endpoint:
+
+`POST /api/webhooks/carrier`
+
+Adapt it to the actual route structure.
+
+Requirements:
+
+- Validate the incoming payload.
+- Resolve the shipment using a stable identifier.
+- Enforce idempotency using a stable event identity or idempotency key.
+- Detect exact duplicates.
+- Detect conflicting payloads sharing the same event identity.
+- Persist event processing outcomes.
+- Reject or quarantine stale events.
+- Define explicit behavior for out-of-order events.
+- Validate shipment-state transitions.
+- Update shipment state only after validation.
+- Recalculate relevant delivery estimates only when appropriate.
+- Record audit history.
+- Return structured HTTP responses.
+- Handle concurrent requests safely.
+
+Use persistent database constraints and transactions for deduplication where needed. Do not depend exclusively on an in-memory cache.
+
+Define how duplicate events, conflicting events, stale events, and invalid transitions differ.
+
+A repeated identical event must not apply operational effects twice.
+
+A conflicting event must not silently overwrite the original accepted event.
+
+Do not assume every carrier uses the same status sequence. Document the supported transitions and base them on the existing domain model.
+
+## 24. Import and webhook security
+
+Validate untrusted input at the backend boundary.
+
+Enforce authentication and authorization according to the actual application design.
+
+If the webhook is unauthenticated by design for local simulation, document that limitation and prevent it from being mistaken for a production-secure external integration.
+
+Never expose secrets, database credentials, or API keys to frontend code or logs.
+
+Do not claim placeholder authentication is production-ready.
+
+---
+
+# PART 11: AUTHORIZATION AND BUSINESS RULES
+
+## 25. Required roles
+
+Preserve the established roles:
+
+- Operations Analyst.
+- Supply Chain Manager.
+- Warehouse Operator.
+- Procurement Approver.
+- Administrator.
+
+Use the repository's existing role identifiers and authorization conventions.
+
+Enforce permissions in backend handlers and services, not only by hiding UI controls.
+
+Preserve separation of duties. A recovery-plan author must not approve their own plan where the four-eyes rule applies.
+
+## 26. Deterministic business logic
+
+Use deterministic backend rules for:
+
+- Inventory calculations.
+- Stock availability.
+- Deadline checks.
+- Shipment-state transitions.
+- Risk calculations.
+- Recovery feasibility.
+- Authorization.
+- Execution.
+- Audit records.
+
+If an LLM is integrated, restrict it to explaining results or ranking already validated recovery options.
+
+Never allow an LLM to bypass permissions, invent inventory, authorize plans, or execute unvalidated operations.
+
+---
+
+# PART 12: AUTOMATED TESTING
+
+## 27. Extend the existing test suite
+
+Do not replace the current test framework without a demonstrated reason.
+
+After Stage 2 approval, add tests for:
+
+### Import pipeline
+
+- Valid CSV imports.
+- Valid JSON imports.
+- Invalid file formats.
+- Invalid rows and field-level errors.
+- Quarantine persistence.
+- Duplicate business records.
+- Partial-import behavior.
+- Transaction rollback.
+- Import retries.
+- Authorization restrictions.
+- Audit-record creation.
+
+### Carrier webhooks
+
+- Valid events.
+- Invalid payloads.
+- Exact duplicate events.
+- Conflicting payloads.
+- Stale timestamps.
+- Out-of-order events.
+- Invalid state transitions.
+- Concurrent duplicate requests.
+- Persistence across application restarts.
+- Audit-record creation.
+
+### Existing functionality
+
+Verify that the existing dashboard, reorder engine, role enforcement, CSV export, navigation, and other working functionality still behave correctly.
+
+Distinguish unit tests, in-memory tests, and PostgreSQL integration tests.
+
+Passing tests against pg-mem does not automatically prove PostgreSQL concurrency, locking, or transaction behavior.
+
+## 28. Verification commands
+
+Run the relevant commands supported by the actual repository, such as:
+
+- Dependency installation.
+- Type checking.
+- Linting.
+- Production build.
+- ORM schema validation.
+- Migration verification.
+- Automated tests.
+- Database integration tests.
+
+Do not assume command names. Inspect the package scripts first.
+
+Do not reset a real or shared database to make tests pass.
+
+Report every command actually executed, its result, and any blocker.
+
+Never fabricate passing tests, successful migrations, screenshots, or completed features.
+
+---
+
+# PART 13: CODE QUALITY AND PERFORMANCE
+
+## 29. Engineering standards
+
+- Keep components modular.
+- Reuse design tokens.
+- Reuse animation utilities.
+- Define explicit API and data types.
+- Keep database logic separate from presentation.
+- Validate data at system boundaries.
+- Handle errors consistently.
+- Avoid unnecessary dependencies.
+- Prevent animation memory leaks.
+- Avoid avoidable rerenders and layout shifts.
+- Lazy-load expensive visualizations when appropriate.
+- Keep operational pages responsive.
+- Do not introduce hardcoded production data to disguise missing backend functionality.
+
+Preserve the existing architecture unless there is a clear technical reason to change it.
+
+---
+
+# PART 14: EXECUTION AND REPORTING
+
+## 30. Current task: architecture verification only
+
+For the current stage:
+
+1. Inspect the actual repository.
+2. Reconcile the conflicting architecture reports.
+3. Verify existing features and tests.
+4. Identify incomplete functionality.
+5. Report security and data-integrity concerns.
+6. Present the Stage 2 implementation plan.
+7. Stop and wait for explicit approval.
+
+Do not implement Stage 2 during this task.
+
+## 31. After explicit Stage 2 approval
+
+Proceed in controlled increments:
+
+1. Implement the import data model and pipeline.
+2. Test import validation, quarantine, transactions, and retries.
+3. Implement the carrier event model and webhook engine.
+4. Test idempotency, conflicts, stale events, and concurrency.
+5. Implement the approved motion system and visualizations.
+6. Connect UI interactions to actual backend behavior.
+7. Run regression, build, and integration checks.
+8. Report the final results and unresolved issues.
+
+Do not silently proceed into unrelated new stages.
+
+## 32. Required report after each stage
+
+Provide:
+
+- Files created and modified.
+- Features implemented.
+- Database changes and migrations.
+- Tests actually executed.
+- Test results, including failures.
+- Build and type-check results.
+- Known limitations.
+- Unimplemented requirements.
+- Environmental blockers.
+- The next proposed step.
+
+Clearly distinguish verified completion from partial implementation.
+
+---
+
+# FINAL ACCEPTANCE CRITERIA
+
+DisruptionIQ must become a distinctive, reliable, responsive supply-chain intelligence application.
+
+The final result must combine:
+
+1. A consistent and professional product identity.
+2. An architecture grounded in the actual repository.
+3. Type-safe code where TypeScript is already used.
+4. Reliable relational data integrity.
+5. Backend-enforced authorization.
+6. A real CSV/JSON ingestion pipeline.
+7. Persistent quarantine and import history.
+8. A carrier webhook with idempotency, conflict detection, and stale-event protection.
+9. Purposeful bottom-right entrance animations and polished hover effects.
+10. Three meaningful supply-chain visualizations.
+11. Responsive, accessible operational pages.
+12. Automated tests with honest, reproducible results.
+
+Priority order:
+
+**Data integrity → Security → Functional correctness → Usability → Accessibility → Responsiveness → Performance → Animation polish → Decorative effects.**
+
+The application must be impressive enough for a hackathon demonstration and technically credible during a code review.
+
+Build a real application, not an animated facade.
+
+**Immediate instruction: Verify the current repository, produce the architecture reconciliation report, and wait for my explicit Stage 2 approval before implementing any gated Stage 2 functionality.**
